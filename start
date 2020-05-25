@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo docker run -d -u jenkins -p 81:8080 --name jenkins -v /var/jenkins_home/:/var/jenkins_home/ vlk-jenkins 
+docker run -d -u jenkins -p 81:8080 --name jenkins -e TZ=Europe/Bratislava -v /var/jenkins_home/:/var/jenkins_home/ vlk-jenkins 
 
